@@ -1,0 +1,24 @@
+#!/bin/sh
+ 
+# 检查commit message是否符合规定的格式
+ 
+# 提供commit-msg文件的路径作为参数
+COMMIT_MSG_FILE=$1
+ 
+# 定义commit message的正则表达式规则
+COMMIT_MSG_PATTERN="^(feat|fix|docs|style|refactor|test|chore|ci)(\(.+\))?: .{1,100}"
+ 
+# 读取commit message文件的内容
+COMMIT_MSG=$(cat "$COMMIT_MSG_FILE")
+ 
+# 使用正则表达式匹配commit message
+if ! echo "$COMMIT_MSG" | grep -E -q "$COMMIT_MSG_PATTERN"; then
+  echo "-------------------------------------------------------------------"
+  echo "提交失败！commit message 不符合规范，请修改后重试"
+  echo "请遵循格式：^(feat|fix|docs|style|refactor|test|chore|ci)(\(.+\))?: .{1,100}"
+  echo "-------------------------------------------------------------------"
+  exit 1
+fi
+ 
+# 如果commit message符合规定的格式，脚本返回0作为成功的退出码
+exit 0
