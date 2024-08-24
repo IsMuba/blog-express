@@ -1,6 +1,6 @@
-<div style="text-align:center">
+<p align="center">
     <img width="200px" src="https://s21.ax1x.com/2024/07/16/pkIr1Bj.jpg" style="border-radius:50%;" />
-</div>
+</p>
 
 <p align="center">
   大家好，我是沐爸。给个 Star 鼓励一下吧！
@@ -25,8 +25,8 @@
 
 ## 开源地址
 
-- 博客后台：[gitee](https://gitee.com/ismuba/blog-admin.git)
-- 博客前台：[gitee](https://gitee.com/ismuba/blog-web.git)
+- 博客后台：[github](https://github.com/ismuba/blog-admin.git)、[gitee](https://gitee.com/ismuba/blog-admin.git)
+- 博客前台：[github](https://github.com/ismuba/blog-web.git)、[gitee](https://gitee.com/ismuba/blog-web.git)
 - 效果预览：[沐爸的官方网站](http://blog.muba888.cn/#/home)
 - 接口地址：[https://doc.apipost.net/docs/detail/2e6803128c64000?target_id=0](https://doc.apipost.net/docs/detail/2e6803128c64000?target_id=0)
 
